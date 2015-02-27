@@ -25,18 +25,18 @@ fi
 
 if [[ "$OS" = "CentOs" && ("$VER" = "6" || "$VER" = "7" ) || 
       "$OS" = "Ubuntu" && ("$VER" = "12.04" || "$VER" = "14.04" ) ]] ; then 
-    echo "This OS is supported by Sentora and this thme installer."
+    echo "This OS is supported by Sentora and this theme installer."
 else
-	echo "Sorry, this OS is not supported by Sentora and this thme installer." 
+	echo "Sorry, this OS is not supported by Sentora and this theme installer." 
     exit 1
 fi
 
 if [ -d "/etc/sentora/panel/etc/styles/$THEME_NAME" ]; then
 	THEME_UPDATE=1
-	echo "You have the $THEME_NAME theme already installed, Theme theme will be updated."
+	echo "You have the $THEME_NAME theme already installed, theme will be updated."
 else
 	THEME_UPDATE=0
-	echo "You have not jet installed the $THEME_NAME theme, Theme theme will be installed."
+	echo "You have not jet installed the $THEME_NAME theme, theme will be installed."
 fi
 
 cd /etc/sentora/panel/etc/styles/
